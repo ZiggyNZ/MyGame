@@ -1,0 +1,6 @@
+Model:
+    - Separate tiles and entities into layers
+    - Layers should return a single image containing all images on that layer
+        - When image get request is made, check for a change to layer. If change is made then update layers image
+        - Floor layer
+        - Entity layer

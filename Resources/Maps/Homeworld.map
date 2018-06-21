@@ -1,0 +1,104 @@
+21 103
+v   v   v   v   v   v   v   v   v   m   v   v   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   v   v   v   m   m   v   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   v   v   m   s   m   v   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   v   v   m   s   s   m   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   v   m   s   s   s   m   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   v   m   s   g   g   s   m   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   v   m   g   s   s   m   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   v   m   s   g   g   m   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   v   s   s   g   s   v   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   v   m   s   g   s   m   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   v   m   g   g   s   v   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   v   m   s   g   s   m   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   m   s   g   g   s   v   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   m   m   s   s   s   m   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   s   s   g   s   m   v   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   m   s   g   g   s   m   v   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   v   m   s   g   s   s   m   v   v   v   v   v   v   v   v   v
+  v   v   v   v   v   m   s   g   g   s   s   m   v   v   v   v   v   v   v   v   v
+v   v   v   v   v   m   s   s   g   g   g   m   m   v   v   v   v   v   v   v   v
+  v   v   v   v   m   s   s   g   g   g   s   s   m   v   v   v   v   v   v   v   v
+v   v   v   v   m   s   g   s   g   g   s   s   s   m   v   v   v   v   v   v   v
+  v   v   v   m   s   s   s   g   g   s   s   s   s   m   v   v   v   v   v   v   v
+v   v   v   m   s   g   s   g   g   g   s   s   s   s   m   v   v   v   v   v   v
+  v   v   m   s   s   g   g   g   g   g   s   s   g   s   m   v   v   v   v   v   v
+v   v   m   m   s   s   g   g   g   g   g   g   g   g   m   v   v   v   v   v   v
+  v   m   s   s   s   g   g   g   g   g   g   g   s   s   m   v   v   v   v   v   v
+v   m   s   s   g   g   g   g   g   g   g   g   g   g   s   v   v   v   v   v   v
+  m   s   g   s   s   g   g   -   g   g   g   g   g   s   m   v   v   v   v   v   v
+m   s   g   s   g   g   g   -   -   g   g   g   g   g   m   m   v   v   v   v   v
+  m   g   g   s   g   g   -   -   -   g   g   g   s   s   s   m   v   v   v   v   v
+m   s   g   g   g   g   -   -   -   -   g   g   g   s   s   s   m   v   v   v   v
+  s   s   g   g   g   -   -   =   -   g   g   g   s   g   s   s   v   v   v   v   v
+m   s   g   g   g   g   -   =   =   -   g   g   g   g   s   s   m   v   v   v   v
+  s   g   g   g   g   -   =   =   -   g   g   g   g   s   g   s   v   v   v   v   v
+m   s   s   g   g   g   -   =   =   -   -   g   g   g   g   s   m   v   v   v   v
+  m   g   g   g   g   -   =   =   -   -   -   g   g   g   s   m   v   v   v   v   v
+m   s   s   g   g   g   -   =   =   -   -   -   g   g   s   s   m   v   v   v   v
+  s   g   g   g   g   -   =   =   =   -   -   -   g   g   s   m   v   v   v   v   v
+m   g   s   g   g   g   -   =   =   =   =   -   g   g   g   s   v   v   v   v   v
+  s   s   g   g   g   g   -   =   =   =   =   -   g   g   s   m   v   v   v   v   v
+m   s   g   g   g   g   -   =   =   =   =   -   g   g   g   s   v   v   v   v   v
+  s   s   g   g   g   g   -   =   =   =   =   -   g   g   g   m   v   v   v   v   v
+m   s   g   g   g   g   -   =   =   =   =   -   g   g   g   s   v   v   v   v   v
+  s   s   g   g   g   g   -   =   -   =   -   -   g   g   s   m   v   v   v   v   v
+m   s   g   g   g   g   -   -   -   -   -   -   g   g   s   s   v   v   v   v   v
+  m   g   g   g   g   g   -   -   -   -   -   g   g   s   s   m   v   v   v   v   v
+m   s   s   g   g   g   g   -   -   -   -   g   g   g   g   m   v   v   v   v   v
+  m   g   g   g   g   g   g   -   g   -   -   g   g   s   s   m   v   v   v   v   v
+m   s   s   g   g   g   g   g   g   g   -   -   g   g   g   s   m   v   v   v   v
+  m   g   g   g   g   g   g   g   g   g   -   -   g   g   g   s   m   v   v   v   v
+m   s   g   g   g   g   g   g   g   g   g   -   -   g   g   s   s   m   v   v   v
+  s   s   g   g   g   g   g   g   g   g   -   -   -   g   g   s   s   m   v   v   v
+m   s   s   g   g   g   g   g   g   g   g   -   -   -   g   s   s   s   m   v   v
+  s   s   g   g   g   g   g   g   g   g   -   -   -   -   g   g   g   s   m   v   v
+m   s   s   g   g   g   g   g   g   g   g   -   =   -   -   g   s   g   s   m   v
+  m   s   g   g   g   g   g   g   g   g   g   -   =   -   -   g   g   g   s   m   v
+m   s   g   g   g   g   g   g   g   g   g   -   =   =   -   g   g   g   s   s   v
+  s   g   s   g   g   g   g   g   g   g   g   -   =   =   -   g   g   s   g   m   v
+m   s   g   g   g   g   g   g   g   g   g   -   =   =   -   g   g   g   g   s   v
+  s   s   g   g   g   g   g   g   g   g   g   -   =   =   -   g   g   s   s   m   v
+m   m   s   s   g   g   g   g   g   g   g   -   =   =   -   -   g   g   s   m   v
+  m   m   s   g   s   g   g   g   g   g   s   -   =   =   -   -   g   s   s   m   v
+v   v   m   s   s   s   g   g   g   g   s   -   -   =   =   -   -   g   g   m   v
+  v   v   m   s   s   g   g   g   g   s   s   -   -   =   =   -   g   g   s   m   v
+v   v   v   m   s   g   g   g   g   s   s   s   -   =   =   =   -   g   g   s   v
+  v   v   v   m   s   g   g   g   g   s   s   s   -   =   =   -   -   s   s   m   v
+v   v   v   v   m   s   g   g   g   s   s   s   -   =   =   =   -   -   s   m   v
+  v   v   v   v   m   s   g   g   g   s   s   s   -   =   =   =   -   -   s   m   v
+v   v   v   v   v   s   g   g   g   s   s   s   -   =   =   =   =   -   s   s   v
+  v   v   v   v   m   s   g   g   g   s   s   s   -   =   =   =   =   -   s   m   v
+v   v   v   v   v   s   g   s   g   s   s   s   -   -   =   =   =   -   g   s   v
+  v   v   v   v   m   g   s   s   g   s   s   s   -   -   -   =   =   -   s   m   v
+v   v   v   v   v   s   s   s   g   s   s   s   s   -   -   -   =   -   g   m   v
+  v   v   v   v   m   s   s   s   g   s   s   s   s   -   -   -   -   -   s   m   v
+v   v   v   v   v   m   m   s   g   s   s   s   s   g   -   -   -   -   s   s   v
+  v   v   v   v   v   m   s   g   g   s   s   s   g   g   g   -   -   g   s   m   v
+v   v   v   v   v   v   m   g   g   g   s   s   g   g   g   g   -   g   g   s   m
+  v   v   v   v   v   v   s   g   s   g   s   g   g   g   g   g   g   g   s   s   v
+v   v   v   v   v   v   m   s   s   s   g   g   g   g   g   g   g   g   s   s   m
+  v   v   v   v   v   v   m   s   g   g   g   g   g   s   g   g   g   g   g   m   v
+v   v   v   v   v   v   v   m   s   g   g   g   g   s   s   g   g   g   s   s   m
+  v   v   v   v   v   v   v   m   s   g   g   g   s   g   s   g   g   g   g   s   v
+v   v   v   v   v   v   v   v   m   s   g   g   g   s   g   g   g   g   g   s   m
+  v   v   v   v   v   v   v   v   m   s   g   g   g   s   g   s   g   g   g   s   v
+v   v   v   v   v   v   v   v   m   s   s   g   s   s   s   s   g   g   s   s   m
+  v   v   v   v   v   v   v   v   s   s   g   s   s   m   s   g   g   g   g   m   v
+v   v   v   v   v   v   v   v   m   s   s   s   g   s   s   s   s   g   g   s   m
+  v   v   v   v   v   v   v   v   s   s   s   s   s   m   m   s   g   g   s   s   v
+v   v   v   v   v   v   v   v   m   m   g   s   s   m   m   s   g   g   g   g   m
+  v   v   v   v   v   v   v   v   m   s   g   m   m   v   s   s   g   g   g   s   v
+v   v   v   v   v   v   v   v   v   m   s   s   m   v   m   s   s   g   g   s   m
+  v   v   v   v   v   v   v   v   v   m   s   m   v   v   m   g   g   g   g   s   v
+v   v   v   v   v   v   v   v   v   v   m   m   v   v   m   s   s   g   s   s   m
+  v   v   v   v   v   v   v   v   v   v   m   v   v   v   s   s   s   g   g   m   v
+v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   g   g   s   g   s   m
+  v   v   v   v   v   v   v   v   v   v   v   v   v   v   s   s   g   g   s   s   v
+v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   s   s   s   g   m   m
+  v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   s   s   g   s   m   v
+v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   s   s   s   m   v
+  v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   m   s   m   v   v
+v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   s   m   v   v
+  v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   m   v   v   v
+v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   v   m   v   v   v

@@ -1,0 +1,61 @@
+15 60
+=   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+  =   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+=   =   =   =   =   =   =   =   =   =   =   =   =   =   =
+  =   =   =   -   -   -   =   =   =   =   =   =   =   =   =
+=   =   -   -   -   -   -   =   =   =   =   =   -   =   =
+  =   -   -   -   -   -   -   =   -   =   =   -   -   =   =
+=   =   -   -   -   -   -   =   -   -   =   -   -   -   =
+  =   -   -   -   -   -   -   -   -   -   -   -   -   -   =
+=   -   -   -   s   s   -   -   -   -   =   -   -   -   -
+  =   -   -   s   s   s   -   -   s   -   -   -   -   -   =
+=   -   -   s   s   s   -   -   s   -   -   -   s   -   -
+  -   -   s   s   s   s   -   s   s   -   -   s   s   -   -
+-   -   s   s   s   s   s   -   s   -   -   s   s   s   -
+  -   -   s   s   s   s   -   s   -   -   -   s   s   s   -
+-   -   s   s   s   s   s   -   -   -   -   s   s   s   -
+  s   s   s   s   s   s   s   -   -   -   -   s   s   s   -
+-   s   s   s   s   s   s   s   -   -   -   -   s   s   s
+  s   s   s   s   s   s   s   s   s   -   -   s   s   s   -
+-   s   s   s   s   s   s   s   s   -   =   -   s   s   s
+  s   s   s   s   s   s   s   s   s   -   -   s   s   s   -
+-   s   s   s   g   g   g   s   s   -   =   -   s   s   s
+  s   s   s   s   g   g   s   g   s   -   -   -   s   s   -
+-   s   s   s   g   g   g   g   g   s   -   -   s   s   s
+  s   s   s   g   g   g   g   g   s   -   -   s   s   s   -
+-   s   s   g   g   g   g   g   g   -   -   s   s   s   -
+  -   s   s   g   g   g   g   g   s   -   s   s   s   s   -
+-   s   s   g   m   m   g   g   s   -   -   s   s   s   -
+  -   s   g   m   m   m   g   s   s   -   s   s   s   s   -
+-   -   s   g   m   m   g   g   s   -   -   s   s   s   -
+  -   s   s   m   g   m   g   s   s   -   s   s   s   -   =
+-   -   s   g   g   g   g   g   s   -   -   s   s   s   =
+  -   -   g   m   g   g   g   s   s   -   -   s   s   -   =
+-   -   s   g   m   g   g   g   s   s   -   s   s   s   -
+  -   -   g   m   g   g   g   s   s   s   -   s   s   -   -
+-   -   s   g   m   g   g   g   s   s   -   s   s   s   -
+  -   -   g   m   g   g   g   s   -   -   -   s   s   s   -
+-   s   s   g   g   g   g   g   s   -   -   s   s   s   s
+  s   s   g   g   g   g   g   s   s   -   s   s   s   s   -
+-   s   s   g   g   g   m   g   s   s   -   s   s   s   s
+  s   s   s   g   g   g   m   g   s   s   s   s   s   s   -
+-   s   s   s   g   m   m   g   s   s   -   s   s   s   s
+  -   s   s   g   g   m   m   g   s   s   s   s   s   s   -
+-   -   s   s   g   m   m   g   g   s   -   s   s   s   s
+  -   s   s   g   g   g   g   g   s   s   s   s   s   s   -
+-   -   s   s   s   g   g   g   g   s   -   s   s   s   s
+  -   s   s   s   g   g   g   g   s   -   s   s   s   s   -
+-   -   s   s   s   g   g   g   s   s   -   s   s   s   -
+  -   s   s   s   s   g   g   s   s   -   -   s   s   -   -
+=   -   s   s   s   s   g   s   s   s   -   s   s   -   -
+  -   -   s   -   s   s   s   s   s   -   -   s   s   -   =
+=   -   -   -   s   s   s   s   s   -   -   s   s   s   -
+  =   -   -   -   s   s   s   s   -   -   -   s   s   s   =
+=   -   -   -   -   s   s   s   -   -   -   -   s   s   -
+  =   -   -   -   -   -   -   -   -   -   -   s   s   s   -
+=   =   -   -   -   -   -   -   -   -   -   -   s   s   -
+  =   =   =   -   -   -   -   -   -   -   -   -   s   s   -
+=   =   =   =   -   -   -   -   =   -   -   -   -   s   -
+  =   =   =   =   -   -   -   =   =   =   -   -   -   -   -
+=   =   =   =   =   -   =   =   =   =   =   -   -   -   -
+  =   =   =   =   =   =   =   =   =   =   -   -   -   -   -
