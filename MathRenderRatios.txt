@@ -1,0 +1,15 @@
+These values are based off the current 43 x 86 hexagons
+
+X VALUES:
+Each step the x value must increase by a percentage of the tile's width (148%). This is essentially the distance between each x node.
+    x increase = 1 tile + (distance between two top corners - 1)
+       = (42 + 86) / 86 = 1.48837209302
+Every second tile on the y axis must be drawn more to the right by a percentage of the tile's width (74.58%).
+    x increase = (x value of top right corner) / (total width)
+        = 65 / 86 = 0.75581395348
+    NOTE: 0.74581395348 May need to be used when zooming in
+Since the number of pixels on the x axis = (number of x tiles) * (148%) + 1 pixel.
+    But we have to add 1 pixel to the x (which is done as a scale)
+        = ((42 + 86) / 86) - ((41 + 86) / 86) = 0.01162790697
+
+NOTE: This math only applies for the tiles that are 86x43 pixels
