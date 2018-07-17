@@ -20,15 +20,16 @@ public class Player {
     private Model.Map observing;
     private Entity selected;
 
-    public Player(String userID, Map observing) {
+    public Player(String userID) {
         this.userID = userID;
-        this.observing = observing;
     }
 
-    public void becomeOwnerOf(Entity entity) {
+    public void inherit(Entity entity) {
         this.entities.add(entity);
     }
-
+    public Entity getSelected() {
+        return selected;
+    }
     public final String getUserID() {
         return userID;
     }

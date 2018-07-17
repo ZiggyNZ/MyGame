@@ -13,3 +13,27 @@ Since the number of pixels on the x axis = (number of x tiles) * (148%) + 1 pixe
         = ((42 + 86) / 86) - ((41 + 86) / 86) = 0.01162790697
 
 NOTE: This math only applies for the tiles that are 86x43 pixels
+
+
+if(tiles[xCount][yCount] == null) {
+                    if(x == 0) {
+                        x+=0.01162790697;
+                    }
+                    yCount++;
+                    continue;
+                } else if(y % 1 == 0) {
+                    gc.drawImage(tiles[xCount][yCount].getFloorImage(),
+                            (int)(x*Resources.TILE_WIDTH),
+                            (int)(y*(Resources.TILE_HEIGHT-1)),
+                            Resources.TILE_WIDTH,
+                            Resources.TILE_HEIGHT);
+                } else {
+                    gc.drawImage(tiles[xCount][yCount].getFloorImage(),
+                            (int)(x*Resources.TILE_WIDTH)+(int)(Resources.TILE_WIDTH*0.75518604651),
+                            (int)(y*(Resources.TILE_HEIGHT-1)),
+                            Resources.TILE_WIDTH,
+                            Resources.TILE_HEIGHT);
+                }
+                if(x == 0) {
+                    x+=0.01162790697;
+                }

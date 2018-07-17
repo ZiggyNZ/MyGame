@@ -11,10 +11,10 @@ public class Tile implements Comparable<Tile> {
     private String obstruction; // Path to obstruction image (otherwise null)
     private Image floorImage; //TODO change obstruction to an image rather than a file path?
     private Entity entity;
-    private int xPosition;
-    private int yPosition;
+    private double xPosition;
+    private double yPosition;
 
-    public Tile(String floorName, String obstructed) {
+    Tile(String floorName, String obstructed) {
         this.floorImage = Resources.getImage("Tiles/Floors/"+floorName);
         this.obstruction = obstructed;
     }
@@ -58,19 +58,19 @@ public class Tile implements Comparable<Tile> {
         this.entity = entity;
     }
 
-    public int getXPosition() {
+    public double getXPosition() {
         return xPosition;
     }
 
-    public void setXPosition(int xPosition) {
+    public void setXPosition(double xPosition) {
         this.xPosition = xPosition;
     }
 
-    public int getYPosition() {
+    public double getYPosition() {
         return yPosition;
     }
 
-    public void setYPosition(int yPosition) {
+    public void setYPosition(double yPosition) {
         this.yPosition = yPosition;
     }
 

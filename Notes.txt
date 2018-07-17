@@ -10,3 +10,5 @@ Model:
     - Note that variable 'tresspassable' has become obstruction and the equivalent value is inverted
 
 TODO: make terrain not an entity. Consider making the obstruction variable an image path (string)
+TODO: consider making tile edges larger (more distinguished) and make the overlap frame grey (rather than black)
+TODO: resources map for getting an obstruction offsets (based off the obstruction image name)

@@ -38,7 +38,6 @@ public class Map {
                 while(lineScanner.hasNext()) {
                     String tile = lineScanner.next();
                     String tileImage = "Image path not assigned";
-                    //TODO: learn switch, case
                     switch(tile){
                         case "=" :
                             tileImage = "DeepWater(88x44).png";
