@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Tile implements Comparable<Tile> {
 
-    private String obstruction; // Path to obstruction image (otherwise null)
+    private String obstruction; //Path to obstruction image (otherwise null)
     private Image floorImage; //TODO change obstruction to an image rather than a file path?
     private Entity entity;
     private double xPosition;
@@ -75,9 +75,9 @@ public class Tile implements Comparable<Tile> {
     }
 
     /* *=*=*=*=*=*=*=*=*=*=*=*=*=* Search algorithm values *=*=*=*=*=*=*=*=*=*=*=*=*=* */
-    public Tile parent = null;
-    public double heuristic = 0;
-    public double costSoFar = 0;
+    public Tile parent = null; //Parent node (used for tracing shortest path back to root)
+    public double heuristic = 0; //Estimated distance to target node
+    public double costSoFar = 0; //Cost from this node back to the root
     public List<Tile> neighbours = new ArrayList<>();
     @Override
     public int compareTo(Tile tile){

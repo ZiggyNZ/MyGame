@@ -1,9 +1,11 @@
 package View.Display;
 
+import Model.Entity;
 import Model.Map;
 import Model.Tile;
 import Utilities.Resources;
 import View.Player;
+import javafx.animation.AnimationTimer;
 import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.Pane;
@@ -22,20 +24,26 @@ public class GameWindow extends Pane {
     private Canvas entities = new Canvas(canvasWidth, canvasHeight);
 
     int count = 0;
-
     public GameWindow(Player user) {
         this.user = user;
-
         setTilePositions();
-
-        redraw();
-
         getChildren().add(floor);
         getChildren().add(entities);
 
-        // TODO update the game display
-//        Timer screenUpdater = new Timer(50, e -> redraw());
-//        screenUpdater.start();
+        currentMap.spawnEntity(user, 2, 18, "Sonic(30x43).png");
+
+        AnimationTimer timer = new AnimationTimer() {
+            private long last = 0;
+            @Override
+            public void handle(long now) {
+                if(now - last >= 16666667) { //60 fps
+//                    currentMap.spawnEntity(user, (int)(Math.random()*14), (int)(Math.random()*59), "Sonic(30x43).png");
+                    redraw();
+                    last = now;
+                }
+            }
+        };
+        timer.start();
     }
 
     private void redraw() {
@@ -49,8 +57,8 @@ public class GameWindow extends Pane {
         Tile[][] tiles = currentMap.getTileMap();
         for(int x = 0; x < currentMap.getWidth(); x++) {
             for(int y = 0; y < currentMap.getHeight(); y++) {
-                drawTile(tiles[x][y]);
-                //TODO draw entities
+                drawFloor(tiles[x][y]);
+                drawEntity(tiles[x][y]);
             }
         }
         if(user.getSelected() != null) {
@@ -86,7 +94,7 @@ public class GameWindow extends Pane {
         }
     }
 
-    private void drawTile(Tile tile){
+    private void drawFloor(Tile tile){
         GraphicsContext gc = floor.getGraphicsContext2D();
         if(tile != null) {
             gc.drawImage(tile.getFloorImage(),
@@ -102,13 +110,18 @@ public class GameWindow extends Pane {
         }
     }
 
-    private void drawEntity() {
-        //TODO: more or less the same as tile drawing
-    }
-
-    private void redrawEntities() {
+    private void drawEntity(Tile tile) {
         GraphicsContext gc = entities.getGraphicsContext2D();
-        gc.drawImage(Resources.getImage("Tiles/Units/Sonic(30x43).png"), 400, 200);
+        if(tile != null && tile.getEntity() != null) {
+            Entity entity = tile.getEntity();
+            double entityWidth = entity.getImage().getWidth();
+            double entityHeight = entity.getImage().getHeight();
+            double xPos = tile.getXPosition() + (Resources.TILE_WIDTH/2) - (entityWidth/2);
+            double yPos = tile.getYPosition() + (Resources.TILE_HEIGHT/2) - entityHeight + 10;
+            gc.drawImage(tile.getEntity().getImage(),
+                    xPos,
+                    yPos);
+        }
     }
 
     public Map getCurrentMap() {

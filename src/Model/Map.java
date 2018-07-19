@@ -1,5 +1,6 @@
 package Model;
 
+import View.Player;
 import org.codehaus.groovy.runtime.DefaultGroovyMethods;
 
 import java.io.File;
@@ -17,7 +18,14 @@ public class Map {
     public Map(String name) {
         this.name = name;
         loadMap();
-        //TODO declare neighbours
+        assignNeighbours();
+    }
+
+    public void spawnEntity(Player owner, int xPos, int yPos, String entityName) {
+        //TODO get unit from a map, based off name input
+        tileMap[xPos][yPos].setEntity(
+                new Unit(owner, entityName, 100, 10, 1)
+        );
     }
 
     private void loadMap() {
@@ -72,7 +80,31 @@ public class Map {
             e.printStackTrace();
             DefaultGroovyMethods.println(this, "Failed to load map /Resources/Maps/" + name + ".map");
         }
-        System.out.println("Loaded successfully");
+        System.out.println(name + " loaded successfully!\n");
+    }
+
+    private void assignNeighbours() {
+        for(int x = 0; x < width; x++) {
+            for(int y = 0; y < height; y++) {
+                Tile tile = tileMap[x][y];
+                if(tile == null) {continue;}
+
+                if(y > 1 && tileMap[x][y] != null) {tile.neighbours.add(tileMap[x][y-2]);} //Top
+                if(y < height-2  && tileMap[x][y+2] != null) {tile.neighbours.add(tileMap[x][y+2]);} //Bottom
+                if(y % 2 == 0){ //Always even 'y' values, starting from y = 0
+                    if(x > 0 && y > 0 && tileMap[x-1][y-1] != null){tile.neighbours.add(tileMap[x-1][y-1]);} //Top left
+                    if(y > 0 && tileMap[x][y-1] != null){tile.neighbours.add(tileMap[x][y-1]);} //Top right
+                    if(y < width-1 && tileMap[x][y+1] != null){tile.neighbours.add(tileMap[x][y+1]);} //Bottom right
+                    if(x > 0 && y < height-1 && tileMap[x-1][y+1] != null){tile.neighbours.add(tileMap[x-1][y+1]);} //Bottom left
+                }
+                else{ //Always odd 'y' values, starting from y = 1
+                    if(tileMap[x][y-1] != null){tile.neighbours.add(tileMap[x][y-1]);} //Top left
+                    if(x < width-1 && tileMap[x+1][y-1] != null){tile.neighbours.add(tileMap[x+1][y-1]);} //Top right
+                    if(x < width-1 && y < height-2 && tileMap[x+1][y+1] != null){tile.neighbours.add(tileMap[x+1][y+1]);} //Bottom right
+                    if(y < height-1 && tileMap[x][y+1] != null){tile.neighbours.add(tileMap[x][y+1]);} //Bottom left
+                }
+            }
+        }
     }
 
     public Tile[][] getTileMap() {
