@@ -3,10 +3,11 @@ package Model;
 import Utilities.Resources;
 import javafx.scene.image.Image;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tile implements Comparable<Tile> {
+public class Tile implements Comparable<Tile>, Serializable {
 
     private String obstruction; //Path to obstruction image (otherwise null)
     private Image floorImage; //TODO change obstruction to an image rather than a file path?

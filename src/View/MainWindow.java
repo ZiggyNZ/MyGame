@@ -18,11 +18,11 @@ public class MainWindow extends Application {
 
     @Override
     public void start(Stage primaryStage) {//TODO add update timer
-        primaryStage.setTitle("The Legend of Sonic");
-
+        primaryStage.setTitle("Not really sonic");
+        Player player = new Player("Test Player 1");
         //Initialise game display
-        GameWindow gameWindow = new GameWindow(new Player("Test Player 1"));
-        gameWindow.setOnMouseClicked(new ClickHandler());
+        GameWindow gameWindow = new GameWindow(player);
+        gameWindow.setOnMouseClicked(new ClickHandler(player));
         ScrollPane scrollPane = new ScrollPane(gameWindow);
         scrollPane.setPrefSize(1400, 700);
         Group root = new Group();

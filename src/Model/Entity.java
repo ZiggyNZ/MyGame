@@ -4,11 +4,14 @@ import Utilities.Resources;
 import View.Player;
 import javafx.scene.image.Image;
 
-public abstract class Entity {
-    private final Player owner;
+import java.io.Serializable;
+
+public abstract class Entity implements Serializable {
+    private final transient Player owner;
     private String name;
     private int maxHP;
     private int currentHP;
+    private String action;
 
     private Image image;
 
@@ -18,8 +21,10 @@ public abstract class Entity {
         this.maxHP = maxHP;
         this.currentHP = maxHP;
         this.image = Resources.getImage("Tiles/"+name);
+        action = "Idle";
     }
 
+    public abstract void tick();
     public Image getImage() {
         return image;
     }

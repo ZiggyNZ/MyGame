@@ -21,23 +21,26 @@ public class GameWindow extends Pane {
     private double canvasWidth = (currentMap.getWidth()*Resources.TILE_WIDTH*x1) + (Resources.TILE_WIDTH/4) + 1;
     private double canvasHeight = (currentMap.getHeight()/2) * Resources.TILE_HEIGHT;
     private Canvas floor = new Canvas(canvasWidth, canvasHeight);
+    private Canvas interactions = new Canvas(canvasWidth, canvasHeight);
     private Canvas entities = new Canvas(canvasWidth, canvasHeight);
 
     int count = 0;
     public GameWindow(Player user) {
         this.user = user;
+
         setTilePositions();
         getChildren().add(floor);
+        getChildren().add(interactions);
         getChildren().add(entities);
 
         currentMap.spawnEntity(user, 2, 18, "Sonic(30x43).png");
 
-        AnimationTimer timer = new AnimationTimer() {
+        AnimationTimer timer = new AnimationTimer() { //TODO tick()
             private long last = 0;
             @Override
             public void handle(long now) {
                 if(now - last >= 16666667) { //60 fps
-//                    currentMap.spawnEntity(user, (int)(Math.random()*14), (int)(Math.random()*59), "Sonic(30x43).png");
+                    //currentMap.spawnEntity(user, (int)(Math.random()*14), (int)(Math.random()*59), "Sonic(30x43).png");
                     redraw();
                     last = now;
                 }
@@ -62,6 +65,7 @@ public class GameWindow extends Pane {
             }
         }
         if(user.getSelected() != null) {
+            drawSelection(user.getSelected());
             //TODO draw selection path
         }
     }
@@ -110,6 +114,15 @@ public class GameWindow extends Pane {
         }
     }
 
+    private void drawSelection(Tile tile) {
+        GraphicsContext gc = interactions.getGraphicsContext2D();
+        gc.drawImage(Resources.getImage("Tiles/Misc/SelectionRing(86x43).png"),
+                tile.getXPosition(),
+                tile.getYPosition(),
+                Resources.TILE_WIDTH,
+                Resources.TILE_HEIGHT);
+    }
+
     private void drawEntity(Tile tile) {
         GraphicsContext gc = entities.getGraphicsContext2D();
         if(tile != null && tile.getEntity() != null) {
@@ -131,5 +144,4 @@ public class GameWindow extends Pane {
     public void setCurrentMap(Map currentMap) {
         this.currentMap = currentMap;
     }
-
 }

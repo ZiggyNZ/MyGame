@@ -4,7 +4,7 @@ import View.Player;
 
 import java.util.List;
 
-public class Unit extends Entity{
+public class Unit extends Entity { //TODO tick()
     private int damage;
     private int range;
 
@@ -17,6 +17,10 @@ public class Unit extends Entity{
         this.range = range;
     }
 
+    public void tick() {
+
+    }
+    public void move() {}
     public void attack() {}
     public void reteliate() {}
 }

@@ -5,9 +5,10 @@ import org.codehaus.groovy.runtime.DefaultGroovyMethods;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
 import java.util.Scanner;
 
-public class Map {
+public class Map implements Serializable {
     private String name;
     private int width;
     private int height;
@@ -23,13 +24,13 @@ public class Map {
 
     public void spawnEntity(Player owner, int xPos, int yPos, String entityName) {
         //TODO get unit from a map, based off name input
-        tileMap[xPos][yPos].setEntity(
-                new Unit(owner, entityName, 100, 10, 1)
-        );
+        Unit unit = new Unit(owner, entityName, 100, 10, 1);
+        owner.inherit(unit);
+        tileMap[xPos][yPos].setEntity(unit);
     }
 
     private void loadMap() {
-        File mapFile = new File("./Resources/Maps/" + name + ".map");
+        File mapFile = new File("./resources/Maps/" + name + ".map");
         int yIndex = 0;
         try {
             Scanner sc = new Scanner(mapFile);
@@ -78,7 +79,7 @@ public class Map {
             sc.close();
         } catch(IOException e) {
             e.printStackTrace();
-            DefaultGroovyMethods.println(this, "Failed to load map /Resources/Maps/" + name + ".map");
+            DefaultGroovyMethods.println(this, "Failed to load map /resources/Maps/" + name + ".map");
         }
         System.out.println(name + " loaded successfully!\n");
     }
@@ -116,4 +117,5 @@ public class Map {
     public int getHeight() {
         return height;
     }
+
 }

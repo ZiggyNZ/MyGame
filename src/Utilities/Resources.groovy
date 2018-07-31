@@ -23,7 +23,7 @@ class Resources {
         if(images.containsKey(imageName)){return images.get(imageName)}
         Image newImage = null
         try{
-            newImage = new Image(new FileInputStream("./Resources/"+imageName))
+            newImage = new Image(new FileInputStream("./resources/"+imageName))
         }catch(Exception e){e.printStackTrace();}
         images.put(imageName, newImage)
         return newImage;

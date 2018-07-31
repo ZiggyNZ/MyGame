@@ -2,6 +2,8 @@ package View;
 
 import Model.Entity;
 import Model.Map;
+import Model.Tile;
+import Utilities.Resources;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -17,21 +19,37 @@ public class Player {
     private List<Entity> entities = new ArrayList<>();
 
     //Player's current instance
-    private Model.Map observing;
-    private Entity selected;
+    private Map observing;
+    private Tile selected;
 
     public Player(String userID) {
         this.userID = userID;
+        this.observing = Resources.getMap("Island");
     }
 
+    public boolean owns(Entity entity) {
+        if(entity == null) {
+            return false;
+        }
+        return entities.contains(entity);
+    }
     public void inherit(Entity entity) {
         this.entities.add(entity);
     }
-    public Entity getSelected() {
+    public Tile getSelected() {
         return selected;
+    }
+    public void setSelected(Tile tile) {
+        this.selected = tile;
     }
     public final String getUserID() {
         return userID;
+    }
+    public Map getObserving() {
+        return observing;
+    }
+    public void setObserving(Map map) {
+        this.observing = map;
     }
 
 }

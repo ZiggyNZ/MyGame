@@ -14,3 +14,22 @@ TODO: consider making tile edges larger (more distinguished) and make the overla
 TODO: resources map for getting an obstruction offsets (based off the obstruction image name)
 TODO: when creating units: clone unit from a map and assign an owner
 TODO: when updating display, draw just the view and not the entire canvas
+TODO: find best way (on server side) to store a map and all entities within it
+
+Server should tick the game, client should update read constantly from the server
+
+
+************Connection direction************
+- User 1..1 Client
+- Client *..1 Server
+- Server 1..1 Database
+
+User -- > Client -- \
+
+
+User -- > Client -- > Server -- > Database
+
+
+User -- > Client -- /
+********************************************
+
